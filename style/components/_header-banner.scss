@@ -1,0 +1,186 @@
+.header-banner {
+    @include flexbetween;
+    margin-bottom: 103px;
+    gap: 143px;
+
+    @include media(576) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 17px;
+        margin-bottom: 80px;
+    }
+
+
+    &_texts {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            max-width: 386px;
+            width: 100%;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 80px;
+            position: relative;
+
+            @include media(992) {
+                max-width: 290px;
+                font-size: 48px;
+                line-height: 64px;
+            }
+
+            @include media(768) {
+                max-width: 217px;
+                font-size: 36px;
+                line-height: 45px;
+            }
+
+            @include media(576) {
+                max-width: 491px;
+                font-size: 34px;
+                line-height: 45px;
+            }
+
+            @include media(520) {
+                text-align: center;
+                font-size: 24px;
+                line-height: 36px;
+                text-align: center;
+            }
+        }
+
+        &__title::after {
+            content: url(../Britlex/img/lamp.png);
+            width: 85px;
+            height: 85px;
+            position: absolute;
+            top: 75px;
+            left: 420px;
+
+            @include media(1219) {
+                display: none;
+            }
+        }
+
+        &__text {
+            max-width: 526px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: $text;
+            margin-block: 40px 61px;
+
+            @include media(992) {
+                max-width: 417px;
+                font-size: 20px;
+                line-height: 30px;
+                margin-block: 27px 33px;
+            }
+
+            @include media(768) {
+                max-width: 333px;
+                font-size: 16px;
+                line-height: 24px;
+                margin-block: 25px 38px;
+            }
+
+            @include media(576) {
+                max-width: 486px;
+                font-size: 16px;
+                line-height: 24px;
+                margin-block: 26px 37px;
+                text-align: center;
+            }
+
+            @include media(320) {
+                font-size: 14px;
+                line-height: 21px;
+                margin-block: 20px 35px;
+                text-align: center;
+            }
+        }
+
+        &__button {
+            max-width: 438px;
+            width: 100%;
+            height: 118px;
+            color: #fff;
+            background-color: $title;
+            border-radius: 15px;
+            border: solid 2px $title;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 54px;
+            transition: 0.3s;
+
+            @include media(992) {
+                max-width: 292px;
+                height: 80px;
+                font-size: 24px;
+                line-height: 36px;
+                border-radius: 5px;
+            }
+
+            @include media(768) {
+                max-width: 236px;
+                height: 65px;
+                font-size: 18px;
+                line-height: 27px;
+                border-radius: 5px;
+            }
+
+            @include media(576) {
+                max-width: 305px;
+                height: 75px;
+                font-size: 18px;
+                line-height: 27px;
+                border-radius: 5px;
+                margin: 0 auto;
+            }
+
+            @include media(320) {
+                max-width: 289px;
+                height: 60px;
+                font-size: 16px;
+                line-height: 24px;
+                border-radius: 5px;
+                margin: 0 auto;
+            }
+        }
+
+        &__button:hover {
+            background-color: #fff;
+            color: $title;
+        }
+    }
+
+    &_img {
+        max-width: 661px;
+        width: 100%;
+
+        @include media(992) {
+            max-width: 460px;
+            width: 100%;
+        }
+
+        @include media(768) {
+            max-width: 352px;
+            width: 100%;
+        }
+
+        @include media(576) {
+            max-width: 424px;
+            width: 100%;
+        }
+
+        @include media(320) {
+            max-width: 299px;
+            width: 100%;
+        }
+
+        &-img {
+            width: 100%;
+        }
+    }
+}

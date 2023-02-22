@@ -1,0 +1,33 @@
+.footer {
+
+
+    &-content {
+        border-top: 1px solid #C4C4C4;
+        @include flexbetween;
+        padding-block: 31px 58px;
+
+        @include media(576) {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-block: 20px 30px;
+        }
+
+        &_text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: $text;
+
+            @include media(992) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            @include media(450) {
+                font-size: 11px;
+                line-height: 16px;
+            }
+        }
+    }
+}

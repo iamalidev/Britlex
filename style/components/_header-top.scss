@@ -1,0 +1,107 @@
+.header {
+    width: 100%;
+
+    &-top {
+        @include flexbetween;
+        margin-block: 55px 51px;
+
+        @include media(992) {
+            margin-block: 25px 68px;
+        }
+
+        @include media(768) {
+            margin-block: 39px 40px;
+        }
+
+        @include media(576) {
+            margin-block: 39px 11px;
+        }
+
+        @include media(320) {
+            margin-block: 36px 29px;
+        }
+
+        &_logo {
+            @include media(992) {
+                width: 89px;
+                height: 45px;
+            }
+        }
+
+        &_menu {
+            display: flex;
+            gap: 20px;
+
+            @include media(768) {
+                display: none;
+            }
+
+            &__link {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: $title;
+                transition: 0.3s;
+
+                @include media(992) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            &__link:hover {
+                color: $text;
+            }
+        }
+
+        &_button {
+            padding: 17px 57px;
+            background-color: #fff;
+            border: 2px solid #263238;
+            border-radius: 5px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: $title;
+            transition: 0.3s;
+
+            @include media(992) {
+                padding: 12px 40px;
+            }
+
+            @include media(768) {
+                display: none;
+            }
+        }
+
+        &_button:hover {
+            background-color: #263238;
+            color: #fff;
+        }
+
+
+        &_burgermenu {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+
+            @include media(768) {
+                display: flex;
+            }
+
+            &-top {
+                width: 30px;
+                height: 3px;
+                background-color: #39515E;
+                border-radius: 1px;
+            }
+
+            &-bottom {
+                width: 21px;
+                height: 3px;
+                background-color: #39515E;
+                border-radius: 1px;
+            }
+        }
+    }
+}

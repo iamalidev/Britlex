@@ -1,0 +1,173 @@
+.contact {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 133px;
+
+    @include media(1200) {
+        display: flex;
+        gap: 200px;
+    }
+
+    @include media(992) {
+        display: flex;
+        gap: 100px;
+    }
+
+    @include media(768) {
+        display: flex;
+        gap: 50px;
+        margin-top: 100px;
+    }
+
+    @include media(768) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &-img {
+        max-width: 477px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        @include media(1200) {
+            max-width: 312px;
+        }
+
+        @include media(992) {
+            max-width: 233px;
+        }
+
+        &_img {
+            width: 100%;
+        }
+    }
+
+    &-texts {
+        max-width: 784px;
+        width: 100%;
+
+        @include media(768) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_title {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 80px;
+
+            @include media(1200) {
+                font-size: 36px;
+            }
+
+            @include media(992) {
+                font-size: 30px;
+            }
+        }
+
+        &_text {
+            max-width: 776px;
+            width: 100%;
+            margin-block: 37px 52px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: $text;
+
+            @include media(1200) {
+                max-width: 440px;
+                margin-block: 3px 34px;
+            }
+
+            @include media(992) {
+                font-size: 14px;
+                line-height: 21px;
+                max-width: 385px;
+                margin-bottom: 26px;
+            }
+
+            @include media(768) {
+                text-align: center;
+            }
+        }
+
+        &_email {
+            display: flex;
+            gap: 12px;
+
+            @include media(576) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-email {
+                max-width: 450px;
+                width: 100%;
+                padding: 26px 0 30px 33px;
+                border: 1px solid $text;
+                border-radius: 10px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $text;
+
+                @include media(1200) {
+                    max-width: 323px;
+                    padding: 23px 0 22px 38px;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+
+                @include media(768) {
+                    width: 700px;
+                    padding: 20px 0 20px 25px;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+
+                @include media(320) {
+                    width: 290px;
+                    padding: 16px 0 16px 26px;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+
+            &-button {
+                padding: 25px 82px;
+                background-color: $black;
+                border-radius: 10px;
+                border: 1px solid $black;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: #fff;
+                transition: 0.3s;
+
+                @include media(1200) {
+                    padding: 21px 56px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                @include media(768) {
+                    padding: 21px 56px;
+                }
+
+                @include media(320) {
+                    padding: 15px 56px;
+                }
+            }
+
+            &-button:hover {
+                background-color: #fff;
+                border: 1px solid $black;
+                color: $black;
+            }
+        }
+    }
+}

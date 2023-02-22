@@ -1,0 +1,270 @@
+.pricing {
+    width: 100%;
+    margin-bottom: 261px;
+
+    @include media(992) {
+        margin-bottom: 140px;
+    }
+
+    @include media(768) {
+        margin-bottom: 65px;
+    }
+
+    @include media(576) {
+        margin-bottom: 140px;
+    }
+
+    @include media(320) {
+        margin-bottom: 72px;
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 80px;
+        color: $black;
+        text-align: center;
+        margin-bottom: 57px;
+    }
+
+    &-cards {
+        @include flexbetween;
+
+        @include media(1263) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 100px;
+        }
+
+        &_leftcard {
+            @include media(1263) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &-img {
+                max-width: 311px;
+                width: 100%;
+            }
+
+            &-title {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 48px;
+                color: $title;
+                margin-block: 40px 32px;
+
+                @include media(401) {
+                    text-align: center;
+                }
+
+                @include media(939) {
+                    font-size: 23px;
+                }
+            }
+
+            &-text {
+                max-width: 419px;
+                width: 100%;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: $text;
+                margin-bottom: 29px;
+
+                @include media(1263) {
+                    text-align: center;
+                }
+            }
+
+            &-price {
+                width: 240px;
+                height: 45px;
+                background-color: $gray;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                @include media(1263) {
+                    width: 100%;
+                }
+
+                &_number {
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 45px;
+                    color: $title;
+                }
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: $text;
+                }
+            }
+        }
+
+        &_betweencard {
+
+            @include media(1263) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &-img {
+                max-width: 391px;
+                width: 100%;
+            }
+
+            &-title {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 48px;
+                color: $title;
+                margin-block: 69px 30px;
+
+                @include media(1263) {
+                    text-align: center;
+                }
+
+                @include media(939) {
+                    font-size: 23px;
+                }
+
+                @include media(320) {
+                    margin-block: 5px 10px;
+                }
+            }
+
+            &-text {
+                max-width: 382px;
+                width: 100%;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: $text;
+                margin-bottom: 59px;
+
+                @include media(1263) {
+                    text-align: center;
+                }
+
+                @include media(320) {
+                    margin-bottom: 29px;
+                }
+            }
+
+            &-price {
+                width: 240px;
+                height: 45px;
+                background-color: $gray;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                @include media(1263) {
+                    width: 100%;
+                }
+
+                &_number {
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 45px;
+                    color: $title;
+                }
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: $text;
+                }
+            }
+        }
+
+        &_rightcard {
+            
+
+            &-img {
+                max-width: 340px;
+                width: 100%;
+            }
+
+            &-title {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 48px;
+                color: $title;
+                margin-block: 11px 30px;
+
+                @include media(1263) {
+                    text-align: center;
+                }
+
+                @include media(939) {
+                    font-size: 23px;
+                    margin-bottom: 10px;
+                }
+
+                @include media(320) {
+                    font-size: 23px;
+                    margin-block: 5px 15px;
+                }
+            }
+
+            &-text {
+                max-width: 425px;
+                width: 100%;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: $text;
+                margin-bottom: 59px;
+
+                @include media(1263) {
+                    text-align: center;
+                }
+
+                @include media(320) {
+                    margin-bottom: 29px;
+                }
+            }
+
+            &-price {
+                width: 240px;
+                height: 45px;
+                background-color: $gray;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                @include media(1263) {
+                    width: 100%;
+                }
+
+                &_number {
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 45px;
+                    color: $title;
+                }
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: $text;
+                }
+            }
+        }
+    }
+}
